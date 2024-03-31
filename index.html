@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>2D Anime Game</title>
+
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="resources/Idle (1).png"/>
+
+    </head>
+    <body class="body" onkeyup="keyCheck(event);" onload="createBoxes(); boyIdleStart();">
+
+        <div class="backgroundBox" id="backgroundBox">
+
+            <div id="win"></div>
+
+            <div class="scoreBoard">
+                <div class="score">SCORE:&nbsp;</div>
+                <div class="score" id="score">0</div>
+            </div>
+
+            <div class="menuBar">
+                <div class="audio" id="audio" onclick="audioVolume();"></div>
+                <div class="reload" id="reload" onclick="reload();"></div>
+                <div class="settings" id="controls"></div>
+            </div>
+
+            <div class="canon" id="canon"></div>
+            <img class="rock" src="resources/flame.gif" />
+
+            <img class="boy" id="boy" src="resources/Idle (1).png"/>
+
+        </div>
+
+        <div class="startGame" id="startGame">
+
+            <div class="forestLogo"></div>
+            <div class="startInfo">
+                <div class="play"><button class="playBtn" onclick="gameStart();"></button>Click To Play</div>
+                <ul>
+                    <li>
+                        <p>press "ENTER" or "SPACEBAR" to start the GAME</p>
+                    </li>
+                    <li>
+                        <p>"SPACEBAR" key to Jump</p>
+                    </li>
+                    <li>
+                        <p><b>Be Careful!</b> The Canons ahead are <b>DANGEROUS</b></p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="endGame" id="endGame">
+
+            <div>Better Luck Next Time!!!</div>
+            <div class="endScore" id="endScore"></div>
+            <button onclick="reload();" class="tryBtn">Try Again</button>
+            <h3 class="restart">Press "R" on the Keyboard to Restart</h3>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

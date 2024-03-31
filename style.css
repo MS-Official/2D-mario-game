@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "score";
+    src: url("fonts/FAST TRACK.ttf");
+}
+
+@font-face {
+    font-family: "red";
+    src: url("fonts/Redemption.ttf");
+}
+
+@font-face {
+    font-family: "normal";
+    src: url("fonts/New\ Athletic\ M54.ttf");
+}
+
+@font-face {
+    font-family: "sketch";
+    src: url("fonts/Sketch\ College.ttf");
+}
+
+@font-face {
+    font-family: "light";
+    src: url("fonts/Montserrat-ExtraLight.ttf");
+}
+
+.body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.backgroundBox {
+    width: 100%;
+    height: 100vh;
+    background-image: url("resources/background.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    position: absolute;
+}
+/*------------------------------Boy----------------------------------*/
+.boy {
+    height: 180px;
+    margin-top: 344px;
+    position: absolute;
+    z-index: 3;
+    margin-left: 90px;
+}
+/*-----------------------------scoreBoard----------------------------*/
+.scoreBoard {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 473);
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin: 20px 0px 0px 570px;
+    box-shadow: 0px 0px 20px 4px lime;
+}
+
+.score {
+    font-size: 34px;
+    color: lime;
+    font-family: "score";
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-image: url("resources/background.png");
+    background-size: contain;
+    margin-top: 446px;
+    position: absolute;
+    z-index: 2;
+}
+/*-------------------------------menuBar-------------------------------*/
+.menuBar {
+    position: absolute;
+    display: flex;
+    margin-left: 1100px;
+    margin-top: 8px;
+}
+
+.audioUn {
+    width: 60px;
+    height: 60px;
+    background-image: url("resources/");
+    margin-left: 0px;
+    background-size: 100%;
+    opacity: 0.5;
+}
+
+.audio {
+    width: 60px;
+    height: 60px;
+    background-image: url("resources/");
+    margin-left: 0px;
+    background-size: 100%;
+}
+
+.audio:hover {
+    width: 62px;
+    height: 62px;
+}
+
+.reload {
+    width: 58px;
+    height: 64px;
+    background-image: url("resources/");
+    background-size: 100%;
+    margin-left: 30px;
+}
+
+.startGame {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    z-index: 100;
+    position: absolute;
+    border-radius: 200px 0px 0px 200px;
+    margin-left: 300px;
+}
+
+.playBtn {
+    background-image: url("resources/");
+    width: 80px;
+    height: 80px;
+    background-size: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+/*-------------------------------Starting----------------------------------*/
+.playBtn:hover {
+    width: 84px;
+    height: 84px;
+    opacity: 0.8;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: "normal";
+    color: white;
+}
+
+.startInfo {
+    margin-left: 50px;
+    margin-top: 180px;
+    font-size: 30px;
+    font-family: "light";
+    font-weight: bold;
+    color: white;
+}
+/*-------------------------------EndBoard----------------------------------*/
+.endGame {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px 60px;
+    background-color: rgba(0, 0, 0, 0.788);
+    font-family: "red";
+    color: red;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    margin-top: 140px;
+    margin-left: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 15px red;
+    text-align: center;
+}
+
+.endScore {
+    margin: 40px 0px 40px;
+    color: white;
+    font-size: 40px;
+    font-family: "score";
+}
+
+.tryBtn {
+    display: flex;
+    padding: 10px 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.733);
+    font-size: 36px;
+    font-family: "red";
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 2px red;
+}
+
+.tryBtn:hover {
+    background-color: red;
+    cursor: pointer;
+    transition-duration: 300ms;
+    box-shadow: 0px 0px 30px 2px rgb(0, 0, 0);
+}
+
+/*---------------------Restart-----------------------*/
+.restart {
+    font-family: "light";
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+.restart:hover {
+    color: rgb(172, 172, 172);
+}
+
+.win {
+    width: 700px;
+    height: 400px;
+    background-image: url("resources/");
+    background-size: 100%;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 50px;
+    z-index: 50;
+}
+
+.forestLogo {
+    position: absolute;
+    background-image: url("resources/");
+    width: 400px;
+    height: 65px;
+    background-size: 100%;
+    margin-top: 90px;
+    margin-left: 100px;
+}
